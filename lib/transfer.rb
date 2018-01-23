@@ -28,10 +28,11 @@ class Transfer
   end
 
   def reverse_transfer
-    status =="completed"
+    if status =="completed"
     sender.balance +=@amount
     receiver.balance -=@amount
     status =="reversed"
   end
 
+  end
 end
